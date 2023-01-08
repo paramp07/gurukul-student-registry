@@ -1,0 +1,30 @@
+[
+    {
+        "Name":"Person",
+        "BDate":"1-09-2012",
+        "Age":10,
+        "Class":"Harikrushna",
+        "Email":"idk@gmail.com"
+    },
+    {
+        "Name":"Person_3",
+        "BDate":"05-07-2009",
+        "Age":13,
+        "Class":"Neelkanth",
+        "Email":"33@gmail.com"
+    },
+    {
+        "Name":"Joe",
+        "BDate":"03-07-2007",
+        "Age":14,
+        "Class":"Neelkanth",
+        "Email":"newidk@gmail.com"
+    },
+    {
+        "Name":"Rudra",
+        "BDate":"03-07-2007",
+        "Age":14,
+        "Class":"Neelkanth",
+        "Email":"hroneda@gmail.com"
+    }
+]
