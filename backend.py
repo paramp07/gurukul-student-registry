@@ -89,7 +89,7 @@ joe = dataStructure().new(f'{name}',f'{bdate}',age,f'{class_}',f'{email}')
 
 
 #JSON ---> Python stuff
-fileName = str(os.path.abspath(path)) + "/dataBase.JSON"
+fileName = "dataBase.JSON"
 listObj = []
 
 #Check if file is there
