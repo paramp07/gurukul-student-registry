@@ -45,14 +45,42 @@ def checkClass(age):
         class_ = Classes.NEELKANTH.value
     return class_
 
+
+def calculate_age(birthday):
+  while True:
+    try:
+      # Parse the birthday string into a datetime object
+      bday = datetime.strptime(birthday, "%m-%d-%Y")
+
+      # Get the current date
+      today = datetime.now()
+
+      # Calculate the age in years
+      age = today.year - bday.year
+
+      # Check if the birthday has not yet occurred this year
+      if today.month < bday.month or (today.month == bday.month and today.day < bday.day):
+        age -= 1
+
+      break
+
+    except ValueError:
+      birthday = input("Please enter a valid birthday in the format MM-DD-YYYY: ")
+
+  return age
+
 name = input('name(string): ')
 bdate = input('birthdate(MM-DD-YYYY): ')
-age = input('age(whole number):  ')
+age = calculate_age(bdate)
+print("Your age is:", age)
+
+
 #Error handling for age
-if age != int:
-    raise Exception('Please enter a valid age(whole number)')
-else:
-    age = int(age)
+# if age != int:
+#     raise Exception('Please enter a valid age(whole number)')
+# else:
+#     age = int(age)
+
 class_ = checkClass(age)
 email = input('email(email@somthing.com):   ')
 joe = dataStructure().new(f'{name}',f'{bdate}',age,f'{class_}',f'{email}')
