@@ -35,14 +35,14 @@ class dataStructure:
 
 def checkClass(age):
     class_ = ''
-    if age in range(ClassesRange().BALGHANSHYAM):
-        class_ = Classes().BALGHANSHYAM
-    elif age in range(ClassesRange().GHANSHYAM):
-        class_ = Classes().GHANSHYAM
-    elif age in range(ClassesRange().HARIKRUSHNA):
-        class_ = Classes().HARIKRUSHNA
-    elif age in range(ClassesRange().NEELKANTH):
-        class_ = Classes().NEELKANTH
+    if age in range(ClassesRange.BALGHANSHYAM.value[0], ClassesRange.BALGHANSHYAM.value[1]):
+        class_ = Classes.BALGHANSHYAM.value
+    elif age in range(ClassesRange.GHANSHYAM.value[0], ClassesRange.GHANSHYAM.value[1]):
+        class_ = Classes.GHANSHYAM.value
+    elif age in range(ClassesRange.HARIKRUSHNA.value[0], ClassesRange.HARIKRUSHNA.value[1]):
+        class_ = Classes.HARIKRUSHNA.value
+    elif age in range(ClassesRange.NEELKANTH.value[0], ClassesRange.NEELKANTH.value[1]):
+        class_ = Classes.NEELKANTH.value
     return class_
 
 name = input('name(string): ')
