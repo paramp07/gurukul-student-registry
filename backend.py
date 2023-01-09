@@ -82,6 +82,7 @@ print("Your age is:", age)
 #     age = int(age)
 
 class_ = checkClass(age)
+print("Your Class is:", class_)
 email = input('email(email@somthing.com):   ')
 joe = dataStructure().new(f'{name}',f'{bdate}',age,f'{class_}',f'{email}')
 
